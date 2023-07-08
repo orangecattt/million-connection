@@ -1,0 +1,51 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "client",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/client.cpp",
+                "-lpthread",
+                "-o",
+                "${workspaceFolder}/client"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "server",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/server.cpp",
+                "-lpthread",
+                "-o",
+                "${workspaceFolder}/server"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
